@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* именно этот шрифт используется в badge оригинальном */
+        @font-face {
+            font-family: 'OnyForm';
+            src: url('https://profi.ru/backoffice/icjs/fonts/ony_form/ony_form-regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'OnyForm', Arial, sans-serif;
+        }
+
+        .profile_link {
+            display: block;
+            background-color: #EE1B39;
+            color: #fff;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 24px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 15px;
+
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://profi.ru"><img src="https://profi.ru/backoffice/icjs/logo_red.svg"></a>
+    <div id="target-container">
+        <!-- HTML-код будет вставлен сюда -->
+    </div>
+    <a class="profile_link">Смотреть</a>
+
+    <!-- data-id это данные для скрипта, здесь должен быть ваш id из profi.ru -->
+    <script src="getProfiStats.js" data-id="940160087112dfcc6e222d4802df76f1"></script>
+</body>
+</html>
